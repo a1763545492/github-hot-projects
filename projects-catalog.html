@@ -1,0 +1,312 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 热门项目 · 本地安装手册</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--line:#26303d;--txt:#e6edf3;--dim:#8b949e;--acc:#3fb950;--blue:#58a6ff;--warn:#d29922}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(1200px 600px at 20% -10%,#12263a 0,transparent 60%),var(--bg);color:var(--txt);font:15px/1.65 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+header{padding:56px 32px 22px;max-width:1280px;margin:0 auto}h1{font-size:40px;margin:0 0 12px;letter-spacing:-.5px}h1 span{color:var(--acc)}
+.sub{color:var(--dim);max-width:780px;margin:0 0 20px}.meta{display:flex;gap:10px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--panel);padding:5px 12px;border-radius:999px;font-size:13px;color:var(--dim)}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:28px;max-width:1280px;margin:0 auto;padding:0 32px 80px}
+aside{position:sticky;top:24px;align-self:start;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+aside input{width:100%;padding:9px 11px;border-radius:9px;border:1px solid var(--line);background:#0b0f14;color:var(--txt);margin-bottom:12px;outline:none}
+aside input:focus{border-color:var(--blue)}aside a{display:block;color:var(--dim);text-decoration:none;padding:7px 9px;border-radius:7px;font-size:13.5px}
+aside a:hover{background:#1f2937;color:var(--txt)}.cat{margin-bottom:46px;scroll-margin-top:20px}
+.cat-head{display:flex;align-items:baseline;gap:12px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:18px}
+.cat-head h2{font-size:22px;margin:0}.cat-head span{color:var(--dim);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px;transition:.18s}
+.card:hover{border-color:#3b4a5a;transform:translateY(-2px)}.card-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+h3{font-size:16px;margin:0;line-height:1.4}.badge{font-size:11px;padding:2px 8px;border-radius:999px;white-space:nowrap;border:1px solid}
+.badge.ok{color:var(--acc);border-color:#1f6b34;background:#0f2a17}.badge.src{color:var(--blue);border-color:#1f4c78;background:#10233a}
+.badge.doc{color:#bc8cff;border-color:#4b3a75;background:#1b1530}.badge.warn{color:var(--warn);border-color:#6b5316;background:#2a220d}
+.repo{font-size:12.5px;color:var(--dim);text-decoration:none;font-family:ui-monospace,Consolas,monospace}.repo:hover{color:var(--blue)}
+.desc{color:#c9d1d9;font-size:13.5px;margin:2px 0 6px;flex:1}.run{display:flex;align-items:center;gap:8px;background:#0b0f14;border:1px solid var(--line);border-radius:9px;padding:8px 10px}
+.run code{font-family:ui-monospace,Consolas,monospace;font-size:12.3px;color:#7ee787;overflow-wrap:anywhere;flex:1}
+.copy{background:#21262d;border:1px solid var(--line);color:var(--dim);border-radius:6px;padding:3px 8px;font-size:11.5px;cursor:pointer}
+.copy:hover{color:var(--txt)}@media(max-width:860px){.layout{grid-template-columns:1fr}aside{position:static}}
+</style></head><body><header><h1>GitHub 热门项目 <span>本地安装手册</span></h1>
+<p class="sub">从 6 篇微信文章 + 1 张路线图里提取、去重后的 70 个项目，已全部浅克隆到 <code>D:\GitHub</code>，按 7 类归档。每张卡片给出用途和最小启动命令，可搜索。</p>
+<div class="meta"><span class="chip">共 70 个仓库</span><span class="chip">浅克隆 depth=1</span><span class="chip">7 个分类</span><span class="chip">D:\GitHub</span><span class="chip">2026-10-21</span></div></header>
+<div class="layout"><aside><input placeholder="搜索项目 / 关键词…"><a href="#01-ai-coding">AI 编程助手与技能</a><a href="#02-ai-agents">AI 应用与 Agent 框架</a><a href="#03-local-llm">本地大模型与推理</a><a href="#04-automation">自动化与数据采集</a><a href="#05-web-dev">Web 开发与运维</a><a href="#06-security">安全研究</a><a href="#07-awesome">资源清单与学习路线</a></aside><main><section id="01-ai-coding" class="cat"><div class="cat-head"><h2>AI 编程助手与技能</h2><span>11 个项目</span></div><div class="grid"><article class="card" data-text="rea 逆向工程 agentmorluto/rea把 ai 接到 ghidra / ida / hopper，网页、桌面程序、electron、.net、android 一路拆到二进制，结论带证据，分析在本地跑。">
+<div class="card-top"><h3>REA 逆向工程 Agent</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/morluto/rea" target="_blank">morluto/rea</a>
+<p class="desc">把 AI 接到 Ghidra / IDA / Hopper，网页、桌面程序、Electron、.NET、Android 一路拆到二进制，结论带证据，分析在本地跑。</p>
+<div class="run"><code>npx rea-agents setup</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="matt pocock 的 ai 编码技能集mattpocock/skillstypescript 圈大牛公开的自用技能：grill-me 先反问需求、tdd 先写失败测试、排 bug、架构体检，每项都可自己改。">
+<div class="card-top"><h3>Matt Pocock 的 AI 编码技能集</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/mattpocock/skills" target="_blank">mattpocock/skills</a>
+<p class="desc">TypeScript 圈大牛公开的自用技能：grill-me 先反问需求、TDD 先写失败测试、排 bug、架构体检，每项都可自己改。</p>
+<div class="run"><code>npx skills add mattpocock/skills</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="diagram-design 画图技能cathrynlavery/diagram-design让 ai 按规矩画架构图、时序图、四象限、流程图、时间线，自动排版查重叠，产出双击即开的 html，还能学你的配色。">
+<div class="card-top"><h3>diagram-design 画图技能</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/cathrynlavery/diagram-design" target="_blank">cathrynlavery/diagram-design</a>
+<p class="desc">让 AI 按规矩画架构图、时序图、四象限、流程图、时间线，自动排版查重叠，产出双击即开的 HTML，还能学你的配色。</p>
+<div class="run"><code>npx skills add cathrynlavery/diagram-design</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="openmontage 视频工作室calesthio/openmontage把 claude code / cursor 变成视频工作室：查资料、写脚本、生成画面配音、剪辑合成，开工前先报价、先看分镜。">
+<div class="card-top"><h3>OpenMontage 视频工作室</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/calesthio/OpenMontage" target="_blank">calesthio/OpenMontage</a>
+<p class="desc">把 Claude Code / Cursor 变成视频工作室：查资料、写脚本、生成画面配音、剪辑合成，开工前先报价、先看分镜。</p>
+<div class="run"><code>cd OpenMontage 后按 README 跑流水线</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="claude-mem 长期记忆thedotmack/claude-mem后台记录 ai 用过什么工具、改了什么，压成摘要存本地库；新对话按索引取相关细节，官方称可省约十倍 token。">
+<div class="card-top"><h3>claude-mem 长期记忆</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/thedotmack/claude-mem" target="_blank">thedotmack/claude-mem</a>
+<p class="desc">后台记录 AI 用过什么工具、改了什么，压成摘要存本地库；新对话按索引取相关细节，官方称可省约十倍 token。</p>
+<div class="run"><code>npx claude-mem install</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="free-claude-code 请求代理alishahryar1/free-claude-code本地起代理，把 claude code、codex 的请求转到 60+ 服务商或本地模型，某家挂了自动切换，可用 telegram/discord 语音指挥。">
+<div class="card-top"><h3>free-claude-code 请求代理</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/Alishahryar1/free-claude-code" target="_blank">Alishahryar1/free-claude-code</a>
+<p class="desc">本地起代理，把 Claude Code、Codex 的请求转到 60+ 服务商或本地模型，某家挂了自动切换，可用 Telegram/Discord 语音指挥。</p>
+<div class="run"><code>cd free-claude-code &amp;&amp; npm install &amp;&amp; npm start</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="anthropic 岗位插件包anthropics/knowledge-work-plugins官方 11 个岗位插件（销售、法务、财务、市场、客服、产品、数据、生物研究等），打包专业知识、流程和斜杠命令。">
+<div class="card-top"><h3>Anthropic 岗位插件包</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/anthropics/knowledge-work-plugins" target="_blank">anthropics/knowledge-work-plugins</a>
+<p class="desc">官方 11 个岗位插件（销售、法务、财务、市场、客服、产品、数据、生物研究等），打包专业知识、流程和斜杠命令。</p>
+<div class="run"><code>把插件目录装进 Claude Cowork / Claude Code</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="text-to-cad 文生 3d 模型earthtojake/text-to-cad一句话生成零件 3d 模型，导出 step/stl/3mf，带可制造性检查和工程图，可直连打印/钣金/cnc 下单。">
+<div class="card-top"><h3>text-to-cad 文生 3D 模型</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/earthtojake/text-to-cad" target="_blank">earthtojake/text-to-cad</a>
+<p class="desc">一句话生成零件 3D 模型，导出 STEP/STL/3MF，带可制造性检查和工程图，可直连打印/钣金/CNC 下单。</p>
+<div class="run"><code>npx skills add earthtojake/text-to-cad</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="opensre ai 值班tracer-cloud/opensre告警来了自动拉日志、指标、链路、发布记录，脱敏后交给模型反复验证假设，产出带证据的结论和修复建议，可发 slack。">
+<div class="card-top"><h3>OpenSRE AI 值班</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/Tracer-Cloud/opensre" target="_blank">Tracer-Cloud/opensre</a>
+<p class="desc">告警来了自动拉日志、指标、链路、发布记录，脱敏后交给模型反复验证假设，产出带证据的结论和修复建议，可发 Slack。</p>
+<div class="run"><code>按 README 接入监控工具后运行 opensre</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="aider 终端结对编程paul-gauthier/aider终端里的 ai 编程助手，多文件编辑、git 集成、自动提交，能理解整个项目上下文，适合重构和修 bug。">
+<div class="card-top"><h3>Aider 终端结对编程</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/paul-gauthier/aider" target="_blank">paul-gauthier/aider</a>
+<p class="desc">终端里的 AI 编程助手，多文件编辑、Git 集成、自动提交，能理解整个项目上下文，适合重构和修 bug。</p>
+<div class="run"><code>pip install aider-chat；aider</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="claude skills 精选合集travisvn/awesome-claude-skills社区整理的 claude skills 索引，覆盖文档处理、代码、数据分析等场景，找现成技能模板最快。">
+<div class="card-top"><h3>Claude Skills 精选合集</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/travisvn/awesome-claude-skills" target="_blank">travisvn/awesome-claude-skills</a>
+<p class="desc">社区整理的 Claude Skills 索引，覆盖文档处理、代码、数据分析等场景，找现成技能模板最快。</p>
+<div class="run"><code>打开 README 按需取用</code><button class="copy" onclick="copyText(this)">复制</button></div></article></div></section><section id="02-ai-agents" class="cat"><div class="cat-head"><h2>AI 应用与 Agent 框架</h2><span>12 个项目</span></div><div class="grid"><article class="card" data-text="langchainlangchain-ai/langchain最主流的 llm 应用框架，chain / agent / 工具调用 / 记忆 / 检索一应俱全，生态和案例最多。">
+<div class="card-top"><h3>LangChain</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/langchain-ai/langchain" target="_blank">langchain-ai/langchain</a>
+<p class="desc">最主流的 LLM 应用框架，Chain / Agent / 工具调用 / 记忆 / 检索一应俱全，生态和案例最多。</p>
+<div class="run"><code>pip install langchain</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="langflow 可视化工作流langflow-ai/langflow拖拽式搭建 llm 工作流和 agent，底层兼容 langchain，可导出为代码，适合原型和教学演示。">
+<div class="card-top"><h3>Langflow 可视化工作流</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/langflow-ai/langflow" target="_blank">langflow-ai/langflow</a>
+<p class="desc">拖拽式搭建 LLM 工作流和 Agent，底层兼容 LangChain，可导出为代码，适合原型和教学演示。</p>
+<div class="run"><code>pip install langflow；langflow run</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="dify ai 应用平台langgenius/dify低代码 ai 应用开发平台：可视化工作流、rag 知识库、agent、api 发布，业务人员可直接用。">
+<div class="card-top"><h3>Dify AI 应用平台</h3><span class="badge warn">需 Docker</span></div>
+<a class="repo" href="https://github.com/langgenius/dify" target="_blank">langgenius/dify</a>
+<p class="desc">低代码 AI 应用开发平台：可视化工作流、RAG 知识库、Agent、API 发布，业务人员可直接用。</p>
+<div class="run"><code>docker compose up -d</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="openclaw 自托管 ai 助手openclaw/openclaw完全自托管的个人/团队助手，通过本地 gateway 接 telegram、slack、whatsapp、discord，数据不出设备。">
+<div class="card-top"><h3>OpenClaw 自托管 AI 助手</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/openclaw/openclaw" target="_blank">openclaw/openclaw</a>
+<p class="desc">完全自托管的个人/团队助手，通过本地 Gateway 接 Telegram、Slack、WhatsApp、Discord，数据不出设备。</p>
+<div class="run"><code>按 README 安装 Gateway 并绑定渠道</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="mem0 记忆层mem0ai/mem0给 ai 应用加持久记忆：自动抽取事实、构建用户画像，下次对话自动注入相关记忆。">
+<div class="card-top"><h3>Mem0 记忆层</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/mem0ai/mem0" target="_blank">mem0ai/mem0</a>
+<p class="desc">给 AI 应用加持久记忆：自动抽取事实、构建用户画像，下次对话自动注入相关记忆。</p>
+<div class="run"><code>pip install mem0ai</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="crewai 多 agent 协作crewaiinc/crewai用角色化方式组织多个 agent（研究员、写手、审核员）分工完成复杂任务，代码简洁上手快。">
+<div class="card-top"><h3>CrewAI 多 Agent 协作</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/crewAIInc/crewAI" target="_blank">crewAIInc/crewAI</a>
+<p class="desc">用角色化方式组织多个 Agent（研究员、写手、审核员）分工完成复杂任务，代码简洁上手快。</p>
+<div class="run"><code>pip install crewai</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="metagpt ai 软件公司geekan/metagpt模拟产品经理、架构师、工程师协作，按需求自动产出 prd、设计文档甚至代码。">
+<div class="card-top"><h3>MetaGPT AI 软件公司</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/geekan/MetaGPT" target="_blank">geekan/MetaGPT</a>
+<p class="desc">模拟产品经理、架构师、工程师协作，按需求自动产出 PRD、设计文档甚至代码。</p>
+<div class="run"><code>pip install metagpt</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="微软 autogenmicrosoft/autogen微软开源的多 agent 对话协作框架，交互模式灵活，可与人类混合协作，适合复杂研究场景。">
+<div class="card-top"><h3>微软 AutoGen</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/microsoft/autogen" target="_blank">microsoft/autogen</a>
+<p class="desc">微软开源的多 Agent 对话协作框架，交互模式灵活，可与人类混合协作，适合复杂研究场景。</p>
+<div class="run"><code>pip install autogen-agentchat</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="supermemory 记忆引擎supermemoryai/supermemory高性能 ai 记忆与上下文引擎，支持本地部署，自动处理事实更新与矛盾，低延迟检索。">
+<div class="card-top"><h3>Supermemory 记忆引擎</h3><span class="badge warn">需 Docker</span></div>
+<a class="repo" href="https://github.com/supermemoryai/supermemory" target="_blank">supermemoryai/supermemory</a>
+<p class="desc">高性能 AI 记忆与上下文引擎，支持本地部署，自动处理事实更新与矛盾，低延迟检索。</p>
+<div class="run"><code>参见 README 的 Docker / 云端接入</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="ifixai agent 审计ifixai-ai/ifixai给 agent 做独立审计：检测是否真按业务意图、权限和规则行事，a-f 评分，覆盖幻觉、越权、欺骗风险。">
+<div class="card-top"><h3>iFixAI Agent 审计</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/ifixai-ai/iFixAI" target="_blank">ifixai-ai/iFixAI</a>
+<p class="desc">给 Agent 做独立审计：检测是否真按业务意图、权限和规则行事，A-F 评分，覆盖幻觉、越权、欺骗风险。</p>
+<div class="run"><code>按 README 安装后扫描目标 Agent</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="tradingagents 交易研究tauricresearch/tradingagents多 agent 金融交易研究框架：分析师、研究员、交易员、风控协作给出决策建议，基于 langgraph。">
+<div class="card-top"><h3>TradingAgents 交易研究</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/TauricResearch/TradingAgents" target="_blank">TauricResearch/TradingAgents</a>
+<p class="desc">多 Agent 金融交易研究框架：分析师、研究员、交易员、风控协作给出决策建议，基于 LangGraph。</p>
+<div class="run"><code>pip install -r requirements.txt 后按 README 运行</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="dspy 编程式 llmstanfordnlp/dspy斯坦福出品，“programming, not prompting”：用代码定义流程，框架自动优化 prompt 与权重。">
+<div class="card-top"><h3>DSPy 编程式 LLM</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/stanfordnlp/dspy" target="_blank">stanfordnlp/dspy</a>
+<p class="desc">斯坦福出品，“Programming, not Prompting”：用代码定义流程，框架自动优化 prompt 与权重。</p>
+<div class="run"><code>pip install dspy</code><button class="copy" onclick="copyText(this)">复制</button></div></article></div></section><section id="03-local-llm" class="cat"><div class="cat-head"><h2>本地大模型与推理</h2><span>12 个项目</span></div><div class="grid"><article class="card" data-text="hugging face transformershuggingface/transformers加载、微调、推理几乎所有主流开源模型的事实标准库，tokenizer、pipeline 配套齐全。">
+<div class="card-top"><h3>Hugging Face Transformers</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/huggingface/transformers" target="_blank">huggingface/transformers</a>
+<p class="desc">加载、微调、推理几乎所有主流开源模型的事实标准库，tokenizer、pipeline 配套齐全。</p>
+<div class="run"><code>pip install transformers</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="vllm 推理加速vllm-project/vllmpagedattention 加持的高吞吐推理引擎，支持连续批处理与量化，生产环境常用。">
+<div class="card-top"><h3>vLLM 推理加速</h3><span class="badge warn">需 GPU/Linux</span></div>
+<a class="repo" href="https://github.com/vllm-project/vllm" target="_blank">vllm-project/vllm</a>
+<p class="desc">PagedAttention 加持的高吞吐推理引擎，支持连续批处理与量化，生产环境常用。</p>
+<div class="run"><code>pip install vllm</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="llama.cpp c++ 推理ggml-org/llama.cpp纯 c++ 推理引擎，多种量化格式，cpu 和消费级显卡都能跑，本地/边缘首选。">
+<div class="card-top"><h3>llama.cpp C++ 推理</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/ggml-org/llama.cpp" target="_blank">ggml-org/llama.cpp</a>
+<p class="desc">纯 C++ 推理引擎，多种量化格式，CPU 和消费级显卡都能跑，本地/边缘首选。</p>
+<div class="run"><code>下载 Release 预编译包或按 README 编译</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="llamaindex rag 框架run-llama/llama_index专注数据连接与 rag：文档、数据库、api 建索引，检索策略灵活，与 langchain 互补。">
+<div class="card-top"><h3>LlamaIndex RAG 框架</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/run-llama/llama_index" target="_blank">run-llama/llama_index</a>
+<p class="desc">专注数据连接与 RAG：文档、数据库、API 建索引，检索策略灵活，与 LangChain 互补。</p>
+<div class="run"><code>pip install llama-index</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="nanogpt 教学实现karpathy/nanogptkarpathy 的极简 gpt 训练代码，逻辑清晰注释详细，用来理解大模型训练最合适。">
+<div class="card-top"><h3>nanoGPT 教学实现</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/karpathy/nanoGPT" target="_blank">karpathy/nanoGPT</a>
+<p class="desc">Karpathy 的极简 GPT 训练代码，逻辑清晰注释详细，用来理解大模型训练最合适。</p>
+<div class="run"><code>pip install torch numpy；python train.py</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="ragflow 端到端 raginfiniflow/ragflow强调文档解析、智能分块和检索质量的 rag 引擎，支持复杂 pdf/表格，带可视化界面。">
+<div class="card-top"><h3>RAGFlow 端到端 RAG</h3><span class="badge warn">需 Docker</span></div>
+<a class="repo" href="https://github.com/infiniflow/ragflow" target="_blank">infiniflow/ragflow</a>
+<p class="desc">强调文档解析、智能分块和检索质量的 RAG 引擎，支持复杂 PDF/表格，带可视化界面。</p>
+<div class="run"><code>docker compose -f docker/docker-compose.yml up -d</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="deepseek-v3 官方仓库deepseek-ai/deepseek-v3deepseek 系列模型的官方代码与权重说明，性价比与推理能力突出。">
+<div class="card-top"><h3>DeepSeek-V3 官方仓库</h3><span class="badge warn">需 GPU/Linux</span></div>
+<a class="repo" href="https://github.com/deepseek-ai/DeepSeek-V3" target="_blank">deepseek-ai/DeepSeek-V3</a>
+<p class="desc">DeepSeek 系列模型的官方代码与权重说明，性价比与推理能力突出。</p>
+<div class="run"><code>按 README 下载权重并用 vLLM/SGLang 部署</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="airllm 小显存跑大模型lyogavin/airllm逐层加载权重，不量化不蒸馏，70b 模型约 4g 显存可跑，拿时间换显存。">
+<div class="card-top"><h3>AirLLM 小显存跑大模型</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/lyogavin/airllm" target="_blank">lyogavin/airllm</a>
+<p class="desc">逐层加载权重，不量化不蒸馏，70B 模型约 4G 显存可跑，拿时间换显存。</p>
+<div class="run"><code>pip install airllm</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="ollama 本地模型运行时ollama/ollama一条命令拉取并运行 llama、qwen、deepseek 等模型，提供兼容 openai 的本地 api。">
+<div class="card-top"><h3>Ollama 本地模型运行时</h3><span class="badge warn">需安装运行时</span></div>
+<a class="repo" href="https://github.com/ollama/ollama" target="_blank">ollama/ollama</a>
+<p class="desc">一条命令拉取并运行 Llama、Qwen、DeepSeek 等模型，提供兼容 OpenAI 的本地 API。</p>
+<div class="run"><code>安装 Windows 版后：ollama run qwen3</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="open webui 聊天前端open-webui/open-webui功能完整的本地聊天界面，对接 ollama 或远程 api，支持多用户、rag、插件。">
+<div class="card-top"><h3>Open WebUI 聊天前端</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/open-webui/open-webui" target="_blank">open-webui/open-webui</a>
+<p class="desc">功能完整的本地聊天界面，对接 Ollama 或远程 API，支持多用户、RAG、插件。</p>
+<div class="run"><code>pip install open-webui；open-webui serve</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="lobechat 聊天应用lobehub/lobe-chat设计精致的开源 ai 聊天应用，多模型、插件、知识库，支持桌面与移动端。">
+<div class="card-top"><h3>LobeChat 聊天应用</h3><span class="badge warn">需 Docker</span></div>
+<a class="repo" href="https://github.com/lobehub/lobe-chat" target="_blank">lobehub/lobe-chat</a>
+<p class="desc">设计精致的开源 AI 聊天应用，多模型、插件、知识库，支持桌面与移动端。</p>
+<div class="run"><code>docker run -d -p 3210:3210 lobehub/lobe-chat</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="comfyui 节点绘画comfyanonymous/comfyui基于节点的 stable diffusion 工作流编辑器，可控性最强，自定义节点生态庞大。">
+<div class="card-top"><h3>ComfyUI 节点绘画</h3><span class="badge warn">需 GPU/Linux</span></div>
+<a class="repo" href="https://github.com/comfyanonymous/ComfyUI" target="_blank">comfyanonymous/ComfyUI</a>
+<p class="desc">基于节点的 Stable Diffusion 工作流编辑器，可控性最强，自定义节点生态庞大。</p>
+<div class="run"><code>pip install -r requirements.txt；python main.py</code><button class="copy" onclick="copyText(this)">复制</button></div></article></div></section><section id="04-automation" class="cat"><div class="cat-head"><h2>自动化与数据采集</h2><span>9 个项目</span></div><div class="grid"><article class="card" data-text="n8n 工作流自动化n8n-io/n8n开源低代码自动化平台，可接数百种服务，支持复杂逻辑、错误处理、定时任务，zapier 的开源替代。">
+<div class="card-top"><h3>n8n 工作流自动化</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/n8n-io/n8n" target="_blank">n8n-io/n8n</a>
+<p class="desc">开源低代码自动化平台，可接数百种服务，支持复杂逻辑、错误处理、定时任务，Zapier 的开源替代。</p>
+<div class="run"><code>npx n8n</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="browser-use 浏览器 agentbrowser-use/browser-use让 ai agent 控制真实浏览器：导航、点击、填表、提取信息，适合网页操作类自动化。">
+<div class="card-top"><h3>browser-use 浏览器 Agent</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/browser-use/browser-use" target="_blank">browser-use/browser-use</a>
+<p class="desc">让 AI Agent 控制真实浏览器：导航、点击、填表、提取信息，适合网页操作类自动化。</p>
+<div class="run"><code>pip install browser-use</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="stagehand 网页自动化browserbase/stagehand基于 playwright 的智能网页自动化，用自然语言描述意图，比脚本更灵活也更稳。">
+<div class="card-top"><h3>Stagehand 网页自动化</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/browserbase/stagehand" target="_blank">browserbase/stagehand</a>
+<p class="desc">基于 Playwright 的智能网页自动化，用自然语言描述意图，比脚本更灵活也更稳。</p>
+<div class="run"><code>npm i @browserbasehq/stagehand</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="firecrawl 网页转 markdownmendableai/firecrawl专为 llm/rag 设计的爬取工具，处理 js 渲染与反爬，把网页转成干净 markdown。">
+<div class="card-top"><h3>Firecrawl 网页转 Markdown</h3><span class="badge warn">需 Docker</span></div>
+<a class="repo" href="https://github.com/mendableai/firecrawl" target="_blank">mendableai/firecrawl</a>
+<p class="desc">专为 LLM/RAG 设计的爬取工具，处理 JS 渲染与反爬，把网页转成干净 Markdown。</p>
+<div class="run"><code>docker compose up -d 或使用云 API</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="微软 markitdownmicrosoft/markitdown把 pdf、word、ppt、图片、html 转成干净 markdown，给 rag 准备语料非常顺手。">
+<div class="card-top"><h3>微软 MarkItDown</h3><span class="badge ok">环境已装</span></div>
+<a class="repo" href="https://github.com/microsoft/markitdown" target="_blank">microsoft/markitdown</a>
+<p class="desc">把 PDF、Word、PPT、图片、HTML 转成干净 Markdown，给 RAG 准备语料非常顺手。</p>
+<div class="run"><code>D:\GitHub\_envs\pytools\Scripts\markitdown a.pdf &gt; a.md</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="auto-editor 自动剪辑wyattblue/auto-editor命令行自动删除静音和无聊片段，可导出到 premiere、达芬奇、final cut，播客/录屏提速利器。">
+<div class="card-top"><h3>Auto-Editor 自动剪辑</h3><span class="badge ok">环境已装</span></div>
+<a class="repo" href="https://github.com/WyattBlue/auto-editor" target="_blank">WyattBlue/auto-editor</a>
+<p class="desc">命令行自动删除静音和无聊片段，可导出到 Premiere、达芬奇、Final Cut，播客/录屏提速利器。</p>
+<div class="run"><code>D:\GitHub\_envs\pytools\Scripts\auto-editor input.mp4</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="pic smaller 图片压缩joye61/pic-smaller纯浏览器端批量压缩 jpeg/png/webp/gif/svg/avif/heic，本地处理不上传，支持对比和 zip 下载。">
+<div class="card-top"><h3>Pic Smaller 图片压缩</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/joye61/pic-smaller" target="_blank">joye61/pic-smaller</a>
+<p class="desc">纯浏览器端批量压缩 JPEG/PNG/WebP/GIF/SVG/AVIF/HEIC，本地处理不上传，支持对比和 ZIP 下载。</p>
+<div class="run"><code>cd pic-smaller &amp;&amp; npm install &amp;&amp; npm run dev</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="scrapling 自适应爬虫d4vinci/scrapling能应对网页结构变化的 python 爬虫库，选择器自适应，反爬处理友好。">
+<div class="card-top"><h3>Scrapling 自适应爬虫</h3><span class="badge ok">环境已装</span></div>
+<a class="repo" href="https://github.com/D4Vinci/Scrapling" target="_blank">D4Vinci/Scrapling</a>
+<p class="desc">能应对网页结构变化的 Python 爬虫库，选择器自适应，反爬处理友好。</p>
+<div class="run"><code>D:\GitHub\_envs\pytools\Scripts\scrapling --help</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="maigret osintsoxoj/maigret在数百个站点检索指定用户名，做身份关联和公开信息核查，安全研究常用。">
+<div class="card-top"><h3>Maigret OSINT</h3><span class="badge ok">环境已装</span></div>
+<a class="repo" href="https://github.com/soxoj/maigret" target="_blank">soxoj/maigret</a>
+<p class="desc">在数百个站点检索指定用户名，做身份关联和公开信息核查，安全研究常用。</p>
+<div class="run"><code>D:\GitHub\_envs\pytools\Scripts\maigret username</code><button class="copy" onclick="copyText(this)">复制</button></div></article></div></section><section id="05-web-dev" class="cat"><div class="cat-head"><h2>Web 开发与运维</h2><span>6 个项目</span></div><div class="grid"><article class="card" data-text="markdoc 文档框架markdoc/markdocstripe 开源的 markdown 增强框架，自定义标签 + schema 校验，stripe 官方文档同款。">
+<div class="card-top"><h3>Markdoc 文档框架</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/markdoc/markdoc" target="_blank">markdoc/markdoc</a>
+<p class="desc">Stripe 开源的 Markdown 增强框架，自定义标签 + Schema 校验，Stripe 官方文档同款。</p>
+<div class="run"><code>npm i @markdoc/markdoc</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="openpanel 产品分析openpanel-dev/openpanelmixpanel 的开源替代：事件、漏斗、分群、会话回放、a/b 测试，自托管数据自控。">
+<div class="card-top"><h3>OpenPanel 产品分析</h3><span class="badge warn">需 Docker</span></div>
+<a class="repo" href="https://github.com/openpanel-dev/openpanel" target="_blank">openpanel-dev/openpanel</a>
+<p class="desc">Mixpanel 的开源替代：事件、漏斗、分群、会话回放、A/B 测试，自托管数据自控。</p>
+<div class="run"><code>docker compose up -d</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="code-server 云端 vs codecoder/code-server把完整 vs code 跑在服务器上，浏览器访问，任何设备都能用统一开发环境。">
+<div class="card-top"><h3>code-server 云端 VS Code</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/coder/code-server" target="_blank">coder/code-server</a>
+<p class="desc">把完整 VS Code 跑在服务器上，浏览器访问，任何设备都能用统一开发环境。</p>
+<div class="run"><code>下载 Release 后运行 code-server</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="open saas 模板wasp-lang/open-saas基于 wasp 的开源 saas 启动模板：认证、支付、邮件、后台、落地页全都有。">
+<div class="card-top"><h3>Open SaaS 模板</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/wasp-lang/open-saas" target="_blank">wasp-lang/open-saas</a>
+<p class="desc">基于 Wasp 的开源 SaaS 启动模板：认证、支付、邮件、后台、落地页全都有。</p>
+<div class="run"><code>npm i -g @wasp.sh/wasp；wasp new -t saas</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="apache cloudberryapache/cloudberryapache 孵化中的 mpp 数据库，定位 greenplum 的现代开源替代，面向数仓与 ai/ml 负载。">
+<div class="card-top"><h3>Apache Cloudberry</h3><span class="badge warn">需 GPU/Linux</span></div>
+<a class="repo" href="https://github.com/apache/cloudberry" target="_blank">apache/cloudberry</a>
+<p class="desc">Apache 孵化中的 MPP 数据库，定位 Greenplum 的现代开源替代，面向数仓与 AI/ML 负载。</p>
+<div class="run"><code>按 README 编译或使用 Docker 沙箱</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="gitignore 模板库github/gitignoregithub 官方维护的 .gitignore 模板合集，覆盖几乎所有语言、框架和 ide。">
+<div class="card-top"><h3>gitignore 模板库</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/github/gitignore" target="_blank">github/gitignore</a>
+<p class="desc">GitHub 官方维护的 .gitignore 模板合集，覆盖几乎所有语言、框架和 IDE。</p>
+<div class="run"><code>复制对应模板为项目根目录 .gitignore</code><button class="copy" onclick="copyText(this)">复制</button></div></article></div></section><section id="06-security" class="cat"><div class="cat-head"><h2>安全研究</h2><span>2 个项目</span></div><div class="grid"><article class="card" data-text="esp32 无线干扰研究emenstanougat/esp32-bluejammer基于 esp32 + nrf24 的 2.4ghz 干扰测试工具（蓝牙/ble/wifi/遥控），固件闭源但提供网页刷机。">
+<div class="card-top"><h3>ESP32 无线干扰研究</h3><span class="badge warn">需硬件</span></div>
+<a class="repo" href="https://github.com/EmenstaNougat/ESP32-BlueJammer" target="_blank">EmenstaNougat/ESP32-BlueJammer</a>
+<p class="desc">基于 ESP32 + nRF24 的 2.4GHz 干扰测试工具（蓝牙/BLE/WiFi/遥控），固件闭源但提供网页刷机。</p>
+<div class="run"><code>按 README 准备硬件并用网页刷机</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="bumblebee 供应链扫描perplexityai/bumblebeeperplexity 开源的只读扫描器，检查本机是否装了已知供应链风险的包、扩展或配置。">
+<div class="card-top"><h3>Bumblebee 供应链扫描</h3><span class="badge src">源码就绪</span></div>
+<a class="repo" href="https://github.com/perplexityai/bumblebee" target="_blank">perplexityai/bumblebee</a>
+<p class="desc">Perplexity 开源的只读扫描器，检查本机是否装了已知供应链风险的包、扩展或配置。</p>
+<div class="run"><code>按 README 下载二进制或源码构建</code><button class="copy" onclick="copyText(this)">复制</button></div></article></div></section><section id="07-awesome" class="cat"><div class="cat-head"><h2>资源清单与学习路线</h2><span>18 个项目</span></div><div class="grid"><article class="card" data-text="awesome 总索引sindresorhus/awesome开源世界最著名的清单合集，按主题索引各种 awesome list。">
+<div class="card-top"><h3>Awesome 总索引</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/sindresorhus/awesome" target="_blank">sindresorhus/awesome</a>
+<p class="desc">开源世界最著名的清单合集，按主题索引各种 Awesome List。</p>
+<div class="run"><code>打开 README 检索主题</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="public apis 免费接口public-apis/public-apis上千个公共免费 api 的索引，标注是否需要 key、限流和文档链接。">
+<div class="card-top"><h3>Public APIs 免费接口</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/public-apis/public-apis" target="_blank">public-apis/public-apis</a>
+<p class="desc">上千个公共免费 API 的索引，标注是否需要 Key、限流和文档链接。</p>
+<div class="run"><code>打开 README 按分类筛选</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="free for dev 免费额度ripienaar/free-for-dev开发者可用的免费套餐、免费层服务大全（云、ci、数据库、监控等）。">
+<div class="card-top"><h3>Free for Dev 免费额度</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/ripienaar/free-for-dev" target="_blank">ripienaar/free-for-dev</a>
+<p class="desc">开发者可用的免费套餐、免费层服务大全（云、CI、数据库、监控等）。</p>
+<div class="run"><code>打开 README 检索服务</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="自托管应用大全awesome-selfhosted/awesome-selfhosted可自托管软件清单：笔记、网盘、监控、邮件、im、媒体、自动化，标注技术栈与部署难度。">
+<div class="card-top"><h3>自托管应用大全</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/awesome-selfhosted/awesome-selfhosted" target="_blank">awesome-selfhosted/awesome-selfhosted</a>
+<p class="desc">可自托管软件清单：笔记、网盘、监控、邮件、IM、媒体、自动化，标注技术栈与部署难度。</p>
+<div class="run"><code>打开 README 按需求筛选</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="量化金融清单wilsonfreitas/awesome-quant量化领域最全的资源索引：库、数据源、回测、因子、风险、另类数据、书籍。">
+<div class="card-top"><h3>量化金融清单</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/wilsonfreitas/awesome-quant" target="_blank">wilsonfreitas/awesome-quant</a>
+<p class="desc">量化领域最全的资源索引：库、数据源、回测、因子、风险、另类数据、书籍。</p>
+<div class="run"><code>打开 README 按分类取用</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="build your own xcodecrafters-io/build-your-own-x按主题整理的“从零实现”教程：redis、git、docker、数据库、os、编译器、搜索引擎。">
+<div class="card-top"><h3>Build Your Own X</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/codecrafters-io/build-your-own-x" target="_blank">codecrafters-io/build-your-own-x</a>
+<p class="desc">按主题整理的“从零实现”教程：Redis、Git、Docker、数据库、OS、编译器、搜索引擎。</p>
+<div class="run"><code>打开 README 挑一个主题动手</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="开发者路线图kamranahmedse/developer-roadmaproadmap.sh 的源码仓库，前端、后端、devops、ai、数据工程等交互式学习路径。">
+<div class="card-top"><h3>开发者路线图</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/kamranahmedse/developer-roadmap" target="_blank">kamranahmedse/developer-roadmap</a>
+<p class="desc">roadmap.sh 的源码仓库，前端、后端、DevOps、AI、数据工程等交互式学习路径。</p>
+<div class="run"><code>直接访问 roadmap.sh 体验</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="免费编程书单ebookfoundation/free-programming-books按语言和主题分类的免费电子书、教程、课程索引，含中文版。">
+<div class="card-top"><h3>免费编程书单</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/EbookFoundation/free-programming-books" target="_blank">EbookFoundation/free-programming-books</a>
+<p class="desc">按语言和主题分类的免费电子书、教程、课程索引，含中文版。</p>
+<div class="run"><code>打开 README 按语言查找</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="系统设计入门donnemartin/system-design-primer系统设计面试经典资料：可扩展性、负载均衡、缓存、队列、微服务，附常见题解与权衡。">
+<div class="card-top"><h3>系统设计入门</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/donnemartin/system-design-primer" target="_blank">donnemartin/system-design-primer</a>
+<p class="desc">系统设计面试经典资料：可扩展性、负载均衡、缓存、队列、微服务，附常见题解与权衡。</p>
+<div class="run"><code>打开 README 按章节学习</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="编程面试大学jwasham/coding-interview-university完整的计算机基础与面试学习计划，从数据结构算法到 os、网络、系统设计，带时间规划。">
+<div class="card-top"><h3>编程面试大学</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/jwasham/coding-interview-university" target="_blank">jwasham/coding-interview-university</a>
+<p class="desc">完整的计算机基础与面试学习计划，从数据结构算法到 OS、网络、系统设计，带时间规划。</p>
+<div class="run"><code>打开 README 按计划推进</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="技术面试手册yangshun/tech-interview-handbook结构化面试准备手册：算法、系统设计、行为面试，讲“怎么准备、怎么表达”。">
+<div class="card-top"><h3>技术面试手册</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/yangshun/tech-interview-handbook" target="_blank">yangshun/tech-interview-handbook</a>
+<p class="desc">结构化面试准备手册：算法、系统设计、行为面试，讲“怎么准备、怎么表达”。</p>
+<div class="run"><code>打开 README 按模块复习</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="运维安全秘密知识trimstray/the-book-of-secret-knowledge面向运维、安全、网络的实战知识合集：命令行工具、排障技巧、常用配置。">
+<div class="card-top"><h3>运维安全秘密知识</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/trimstray/the-book-of-secret-knowledge" target="_blank">trimstray/the-book-of-secret-knowledge</a>
+<p class="desc">面向运维、安全、网络的实战知识合集：命令行工具、排障技巧、常用配置。</p>
+<div class="run"><code>打开 README 当速查手册</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="js 算法与数据结构trekhleb/javascript-algorithms用 javascript 实现的常见算法与数据结构，配解释、示例和可视化。">
+<div class="card-top"><h3>JS 算法与数据结构</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/trekhleb/javascript-algorithms" target="_blank">trekhleb/javascript-algorithms</a>
+<p class="desc">用 JavaScript 实现的常见算法与数据结构，配解释、示例和可视化。</p>
+<div class="run"><code>打开 README 或直接跑测试</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="30 秒代码片段30-seconds/30-seconds-of-code精选短小 javascript 片段，几行解决数组、字符串、日期等日常问题。">
+<div class="card-top"><h3>30 秒代码片段</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/30-seconds/30-seconds-of-code" target="_blank">30-seconds/30-seconds-of-code</a>
+<p class="desc">精选短小 JavaScript 片段，几行解决数组、字符串、日期等日常问题。</p>
+<div class="run"><code>打开 README 搜索片段</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="命令行艺术jlevy/the-art-of-command-line资深开发者总结的命令行技巧与最佳实践，精炼实用，含避坑与安全注意事项。">
+<div class="card-top"><h3>命令行艺术</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/jlevy/the-art-of-command-line" target="_blank">jlevy/the-art-of-command-line</a>
+<p class="desc">资深开发者总结的命令行技巧与最佳实践，精炼实用，含避坑与安全注意事项。</p>
+<div class="run"><code>打开 README 边看边试</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="项目式学习清单practical-tutorials/project-based-learning按语言和难度整理的实战项目教程：做简易 twitter、编译器、游戏等。">
+<div class="card-top"><h3>项目式学习清单</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/practical-tutorials/project-based-learning" target="_blank">practical-tutorials/project-based-learning</a>
+<p class="desc">按语言和难度整理的实战项目教程：做简易 Twitter、编译器、游戏等。</p>
+<div class="run"><code>打开 README 按兴趣选项目</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="你不知道的 javascriptgetify/you-dont-know-js深入讲解 js 核心机制：作用域、闭包、this、原型、类型、异步与性能。">
+<div class="card-top"><h3>你不知道的 JavaScript</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/getify/You-Dont-Know-JS" target="_blank">getify/You-Dont-Know-JS</a>
+<p class="desc">深入讲解 JS 核心机制：作用域、闭包、this、原型、类型、异步与性能。</p>
+<div class="run"><code>打开 README 按书阅读</code><button class="copy" onclick="copyText(this)">复制</button></div></article><article class="card" data-text="freecodecamp 学习平台freecodecamp/freecodecamp完全开源的免费编程学习平台源码，含课程、实战项目与认证体系。">
+<div class="card-top"><h3>freeCodeCamp 学习平台</h3><span class="badge doc">文档类</span></div>
+<a class="repo" href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank">freeCodeCamp/freeCodeCamp</a>
+<p class="desc">完全开源的免费编程学习平台源码，含课程、实战项目与认证体系。</p>
+<div class="run"><code>日常直接上官网学；二次开发见 README</code><button class="copy" onclick="copyText(this)">复制</button></div></article></div></section></main></div>
+<script>const i=document.querySelector('aside input'),cs=[...document.querySelectorAll('.card')];
+i.addEventListener('input',()=>{const q=i.value.trim().toLowerCase();cs.forEach(c=>c.style.display=!q||c.dataset.text.includes(q)?'':'none')});
+function copyText(b){const t=b.previousElementSibling.innerText;navigator.clipboard.writeText(t).then(()=>{b.textContent='已复制';setTimeout(()=>b.textContent='复制',1200)})}</script></body></html>

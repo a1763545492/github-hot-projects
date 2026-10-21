@@ -1,0 +1,632 @@
+[
+ {
+  "cat": "AI 编程助手与技能",
+  "title": "REA 逆向工程 Agent",
+  "url": "https://github.com/morluto/rea",
+  "repo": "morluto/rea",
+  "desc": "把 AI 接到 Ghidra / IDA / Hopper，网页、桌面程序、Electron、.NET、Android 一路拆到二进制，结论带证据，分析在本地跑。",
+  "run": "npx rea-agents setup",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 编程助手与技能",
+  "title": "Matt Pocock 的 AI 编码技能集",
+  "url": "https://github.com/mattpocock/skills",
+  "repo": "mattpocock/skills",
+  "desc": "TypeScript 圈大牛公开的自用技能：grill-me 先反问需求、TDD 先写失败测试、排 bug、架构体检，每项都可自己改。",
+  "run": "npx skills add mattpocock/skills",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 编程助手与技能",
+  "title": "diagram-design 画图技能",
+  "url": "https://github.com/cathrynlavery/diagram-design",
+  "repo": "cathrynlavery/diagram-design",
+  "desc": "让 AI 按规矩画架构图、时序图、四象限、流程图、时间线，自动排版查重叠，产出双击即开的 HTML，还能学你的配色。",
+  "run": "npx skills add cathrynlavery/diagram-design",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 编程助手与技能",
+  "title": "OpenMontage 视频工作室",
+  "url": "https://github.com/calesthio/OpenMontage",
+  "repo": "calesthio/OpenMontage",
+  "desc": "把 Claude Code / Cursor 变成视频工作室：查资料、写脚本、生成画面配音、剪辑合成，开工前先报价、先看分镜。",
+  "run": "cd OpenMontage 后按 README 跑流水线",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 编程助手与技能",
+  "title": "claude-mem 长期记忆",
+  "url": "https://github.com/thedotmack/claude-mem",
+  "repo": "thedotmack/claude-mem",
+  "desc": "后台记录 AI 用过什么工具、改了什么，压成摘要存本地库；新对话按索引取相关细节，官方称可省约十倍 token。",
+  "run": "npx claude-mem install",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 编程助手与技能",
+  "title": "free-claude-code 请求代理",
+  "url": "https://github.com/Alishahryar1/free-claude-code",
+  "repo": "Alishahryar1/free-claude-code",
+  "desc": "本地起代理，把 Claude Code、Codex 的请求转到 60+ 服务商或本地模型，某家挂了自动切换，可用 Telegram/Discord 语音指挥。",
+  "run": "cd free-claude-code && npm install && npm start",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 编程助手与技能",
+  "title": "Anthropic 岗位插件包",
+  "url": "https://github.com/anthropics/knowledge-work-plugins",
+  "repo": "anthropics/knowledge-work-plugins",
+  "desc": "官方 11 个岗位插件（销售、法务、财务、市场、客服、产品、数据、生物研究等），打包专业知识、流程和斜杠命令。",
+  "run": "把插件目录装进 Claude Cowork / Claude Code",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 编程助手与技能",
+  "title": "text-to-cad 文生 3D 模型",
+  "url": "https://github.com/earthtojake/text-to-cad",
+  "repo": "earthtojake/text-to-cad",
+  "desc": "一句话生成零件 3D 模型，导出 STEP/STL/3MF，带可制造性检查和工程图，可直连打印/钣金/CNC 下单。",
+  "run": "npx skills add earthtojake/text-to-cad",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 编程助手与技能",
+  "title": "OpenSRE AI 值班",
+  "url": "https://github.com/Tracer-Cloud/opensre",
+  "repo": "Tracer-Cloud/opensre",
+  "desc": "告警来了自动拉日志、指标、链路、发布记录，脱敏后交给模型反复验证假设，产出带证据的结论和修复建议，可发 Slack。",
+  "run": "按 README 接入监控工具后运行 opensre",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 编程助手与技能",
+  "title": "Aider 终端结对编程",
+  "url": "https://github.com/paul-gauthier/aider",
+  "repo": "paul-gauthier/aider",
+  "desc": "终端里的 AI 编程助手，多文件编辑、Git 集成、自动提交，能理解整个项目上下文，适合重构和修 bug。",
+  "run": "pip install aider-chat；aider",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 编程助手与技能",
+  "title": "Claude Skills 精选合集",
+  "url": "https://github.com/travisvn/awesome-claude-skills",
+  "repo": "travisvn/awesome-claude-skills",
+  "desc": "社区整理的 Claude Skills 索引，覆盖文档处理、代码、数据分析等场景，找现成技能模板最快。",
+  "run": "打开 README 按需取用",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 应用与 Agent 框架",
+  "title": "LangChain",
+  "url": "https://github.com/langchain-ai/langchain",
+  "repo": "langchain-ai/langchain",
+  "desc": "最主流的 LLM 应用框架，Chain / Agent / 工具调用 / 记忆 / 检索一应俱全，生态和案例最多。",
+  "run": "pip install langchain",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 应用与 Agent 框架",
+  "title": "Langflow 可视化工作流",
+  "url": "https://github.com/langflow-ai/langflow",
+  "repo": "langflow-ai/langflow",
+  "desc": "拖拽式搭建 LLM 工作流和 Agent，底层兼容 LangChain，可导出为代码，适合原型和教学演示。",
+  "run": "pip install langflow；langflow run",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 应用与 Agent 框架",
+  "title": "Dify AI 应用平台",
+  "url": "https://github.com/langgenius/dify",
+  "repo": "langgenius/dify",
+  "desc": "低代码 AI 应用开发平台：可视化工作流、RAG 知识库、Agent、API 发布，业务人员可直接用。",
+  "run": "docker compose up -d",
+  "status": "需 Docker"
+ },
+ {
+  "cat": "AI 应用与 Agent 框架",
+  "title": "OpenClaw 自托管 AI 助手",
+  "url": "https://github.com/openclaw/openclaw",
+  "repo": "openclaw/openclaw",
+  "desc": "完全自托管的个人/团队助手，通过本地 Gateway 接 Telegram、Slack、WhatsApp、Discord，数据不出设备。",
+  "run": "按 README 安装 Gateway 并绑定渠道",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 应用与 Agent 框架",
+  "title": "Mem0 记忆层",
+  "url": "https://github.com/mem0ai/mem0",
+  "repo": "mem0ai/mem0",
+  "desc": "给 AI 应用加持久记忆：自动抽取事实、构建用户画像，下次对话自动注入相关记忆。",
+  "run": "pip install mem0ai",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 应用与 Agent 框架",
+  "title": "CrewAI 多 Agent 协作",
+  "url": "https://github.com/crewAIInc/crewAI",
+  "repo": "crewAIInc/crewAI",
+  "desc": "用角色化方式组织多个 Agent（研究员、写手、审核员）分工完成复杂任务，代码简洁上手快。",
+  "run": "pip install crewai",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 应用与 Agent 框架",
+  "title": "MetaGPT AI 软件公司",
+  "url": "https://github.com/geekan/MetaGPT",
+  "repo": "geekan/MetaGPT",
+  "desc": "模拟产品经理、架构师、工程师协作，按需求自动产出 PRD、设计文档甚至代码。",
+  "run": "pip install metagpt",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 应用与 Agent 框架",
+  "title": "微软 AutoGen",
+  "url": "https://github.com/microsoft/autogen",
+  "repo": "microsoft/autogen",
+  "desc": "微软开源的多 Agent 对话协作框架，交互模式灵活，可与人类混合协作，适合复杂研究场景。",
+  "run": "pip install autogen-agentchat",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 应用与 Agent 框架",
+  "title": "Supermemory 记忆引擎",
+  "url": "https://github.com/supermemoryai/supermemory",
+  "repo": "supermemoryai/supermemory",
+  "desc": "高性能 AI 记忆与上下文引擎，支持本地部署，自动处理事实更新与矛盾，低延迟检索。",
+  "run": "参见 README 的 Docker / 云端接入",
+  "status": "需 Docker"
+ },
+ {
+  "cat": "AI 应用与 Agent 框架",
+  "title": "iFixAI Agent 审计",
+  "url": "https://github.com/ifixai-ai/iFixAI",
+  "repo": "ifixai-ai/iFixAI",
+  "desc": "给 Agent 做独立审计：检测是否真按业务意图、权限和规则行事，A-F 评分，覆盖幻觉、越权、欺骗风险。",
+  "run": "按 README 安装后扫描目标 Agent",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 应用与 Agent 框架",
+  "title": "TradingAgents 交易研究",
+  "url": "https://github.com/TauricResearch/TradingAgents",
+  "repo": "TauricResearch/TradingAgents",
+  "desc": "多 Agent 金融交易研究框架：分析师、研究员、交易员、风控协作给出决策建议，基于 LangGraph。",
+  "run": "pip install -r requirements.txt 后按 README 运行",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "AI 应用与 Agent 框架",
+  "title": "DSPy 编程式 LLM",
+  "url": "https://github.com/stanfordnlp/dspy",
+  "repo": "stanfordnlp/dspy",
+  "desc": "斯坦福出品，“Programming, not Prompting”：用代码定义流程，框架自动优化 prompt 与权重。",
+  "run": "pip install dspy",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "本地大模型与推理",
+  "title": "Hugging Face Transformers",
+  "url": "https://github.com/huggingface/transformers",
+  "repo": "huggingface/transformers",
+  "desc": "加载、微调、推理几乎所有主流开源模型的事实标准库，tokenizer、pipeline 配套齐全。",
+  "run": "pip install transformers",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "本地大模型与推理",
+  "title": "vLLM 推理加速",
+  "url": "https://github.com/vllm-project/vllm",
+  "repo": "vllm-project/vllm",
+  "desc": "PagedAttention 加持的高吞吐推理引擎，支持连续批处理与量化，生产环境常用。",
+  "run": "pip install vllm",
+  "status": "需 GPU/Linux"
+ },
+ {
+  "cat": "本地大模型与推理",
+  "title": "llama.cpp C++ 推理",
+  "url": "https://github.com/ggml-org/llama.cpp",
+  "repo": "ggml-org/llama.cpp",
+  "desc": "纯 C++ 推理引擎，多种量化格式，CPU 和消费级显卡都能跑，本地/边缘首选。",
+  "run": "下载 Release 预编译包或按 README 编译",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "本地大模型与推理",
+  "title": "LlamaIndex RAG 框架",
+  "url": "https://github.com/run-llama/llama_index",
+  "repo": "run-llama/llama_index",
+  "desc": "专注数据连接与 RAG：文档、数据库、API 建索引，检索策略灵活，与 LangChain 互补。",
+  "run": "pip install llama-index",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "本地大模型与推理",
+  "title": "nanoGPT 教学实现",
+  "url": "https://github.com/karpathy/nanoGPT",
+  "repo": "karpathy/nanoGPT",
+  "desc": "Karpathy 的极简 GPT 训练代码，逻辑清晰注释详细，用来理解大模型训练最合适。",
+  "run": "pip install torch numpy；python train.py",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "本地大模型与推理",
+  "title": "RAGFlow 端到端 RAG",
+  "url": "https://github.com/infiniflow/ragflow",
+  "repo": "infiniflow/ragflow",
+  "desc": "强调文档解析、智能分块和检索质量的 RAG 引擎，支持复杂 PDF/表格，带可视化界面。",
+  "run": "docker compose -f docker/docker-compose.yml up -d",
+  "status": "需 Docker"
+ },
+ {
+  "cat": "本地大模型与推理",
+  "title": "DeepSeek-V3 官方仓库",
+  "url": "https://github.com/deepseek-ai/DeepSeek-V3",
+  "repo": "deepseek-ai/DeepSeek-V3",
+  "desc": "DeepSeek 系列模型的官方代码与权重说明，性价比与推理能力突出。",
+  "run": "按 README 下载权重并用 vLLM/SGLang 部署",
+  "status": "需 GPU/Linux"
+ },
+ {
+  "cat": "本地大模型与推理",
+  "title": "AirLLM 小显存跑大模型",
+  "url": "https://github.com/lyogavin/airllm",
+  "repo": "lyogavin/airllm",
+  "desc": "逐层加载权重，不量化不蒸馏，70B 模型约 4G 显存可跑，拿时间换显存。",
+  "run": "pip install airllm",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "本地大模型与推理",
+  "title": "Ollama 本地模型运行时",
+  "url": "https://github.com/ollama/ollama",
+  "repo": "ollama/ollama",
+  "desc": "一条命令拉取并运行 Llama、Qwen、DeepSeek 等模型，提供兼容 OpenAI 的本地 API。",
+  "run": "安装 Windows 版后：ollama run qwen3",
+  "status": "需安装运行时"
+ },
+ {
+  "cat": "本地大模型与推理",
+  "title": "Open WebUI 聊天前端",
+  "url": "https://github.com/open-webui/open-webui",
+  "repo": "open-webui/open-webui",
+  "desc": "功能完整的本地聊天界面，对接 Ollama 或远程 API，支持多用户、RAG、插件。",
+  "run": "pip install open-webui；open-webui serve",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "本地大模型与推理",
+  "title": "LobeChat 聊天应用",
+  "url": "https://github.com/lobehub/lobe-chat",
+  "repo": "lobehub/lobe-chat",
+  "desc": "设计精致的开源 AI 聊天应用，多模型、插件、知识库，支持桌面与移动端。",
+  "run": "docker run -d -p 3210:3210 lobehub/lobe-chat",
+  "status": "需 Docker"
+ },
+ {
+  "cat": "本地大模型与推理",
+  "title": "ComfyUI 节点绘画",
+  "url": "https://github.com/comfyanonymous/ComfyUI",
+  "repo": "comfyanonymous/ComfyUI",
+  "desc": "基于节点的 Stable Diffusion 工作流编辑器，可控性最强，自定义节点生态庞大。",
+  "run": "pip install -r requirements.txt；python main.py",
+  "status": "需 GPU/Linux"
+ },
+ {
+  "cat": "自动化与数据采集",
+  "title": "n8n 工作流自动化",
+  "url": "https://github.com/n8n-io/n8n",
+  "repo": "n8n-io/n8n",
+  "desc": "开源低代码自动化平台，可接数百种服务，支持复杂逻辑、错误处理、定时任务，Zapier 的开源替代。",
+  "run": "npx n8n",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "自动化与数据采集",
+  "title": "browser-use 浏览器 Agent",
+  "url": "https://github.com/browser-use/browser-use",
+  "repo": "browser-use/browser-use",
+  "desc": "让 AI Agent 控制真实浏览器：导航、点击、填表、提取信息，适合网页操作类自动化。",
+  "run": "pip install browser-use",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "自动化与数据采集",
+  "title": "Stagehand 网页自动化",
+  "url": "https://github.com/browserbase/stagehand",
+  "repo": "browserbase/stagehand",
+  "desc": "基于 Playwright 的智能网页自动化，用自然语言描述意图，比脚本更灵活也更稳。",
+  "run": "npm i @browserbasehq/stagehand",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "自动化与数据采集",
+  "title": "Firecrawl 网页转 Markdown",
+  "url": "https://github.com/mendableai/firecrawl",
+  "repo": "mendableai/firecrawl",
+  "desc": "专为 LLM/RAG 设计的爬取工具，处理 JS 渲染与反爬，把网页转成干净 Markdown。",
+  "run": "docker compose up -d 或使用云 API",
+  "status": "需 Docker"
+ },
+ {
+  "cat": "自动化与数据采集",
+  "title": "微软 MarkItDown",
+  "url": "https://github.com/microsoft/markitdown",
+  "repo": "microsoft/markitdown",
+  "desc": "把 PDF、Word、PPT、图片、HTML 转成干净 Markdown，给 RAG 准备语料非常顺手。",
+  "run": "D:\\GitHub\\_envs\\pytools\\Scripts\\markitdown a.pdf > a.md",
+  "status": "环境已装"
+ },
+ {
+  "cat": "自动化与数据采集",
+  "title": "Auto-Editor 自动剪辑",
+  "url": "https://github.com/WyattBlue/auto-editor",
+  "repo": "WyattBlue/auto-editor",
+  "desc": "命令行自动删除静音和无聊片段，可导出到 Premiere、达芬奇、Final Cut，播客/录屏提速利器。",
+  "run": "D:\\GitHub\\_envs\\pytools\\Scripts\\auto-editor input.mp4",
+  "status": "环境已装"
+ },
+ {
+  "cat": "自动化与数据采集",
+  "title": "Pic Smaller 图片压缩",
+  "url": "https://github.com/joye61/pic-smaller",
+  "repo": "joye61/pic-smaller",
+  "desc": "纯浏览器端批量压缩 JPEG/PNG/WebP/GIF/SVG/AVIF/HEIC，本地处理不上传，支持对比和 ZIP 下载。",
+  "run": "cd pic-smaller && npm install && npm run dev",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "自动化与数据采集",
+  "title": "Scrapling 自适应爬虫",
+  "url": "https://github.com/D4Vinci/Scrapling",
+  "repo": "D4Vinci/Scrapling",
+  "desc": "能应对网页结构变化的 Python 爬虫库，选择器自适应，反爬处理友好。",
+  "run": "D:\\GitHub\\_envs\\pytools\\Scripts\\scrapling --help",
+  "status": "环境已装"
+ },
+ {
+  "cat": "自动化与数据采集",
+  "title": "Maigret OSINT",
+  "url": "https://github.com/soxoj/maigret",
+  "repo": "soxoj/maigret",
+  "desc": "在数百个站点检索指定用户名，做身份关联和公开信息核查，安全研究常用。",
+  "run": "D:\\GitHub\\_envs\\pytools\\Scripts\\maigret username",
+  "status": "环境已装"
+ },
+ {
+  "cat": "Web 开发与运维",
+  "title": "Markdoc 文档框架",
+  "url": "https://github.com/markdoc/markdoc",
+  "repo": "markdoc/markdoc",
+  "desc": "Stripe 开源的 Markdown 增强框架，自定义标签 + Schema 校验，Stripe 官方文档同款。",
+  "run": "npm i @markdoc/markdoc",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "Web 开发与运维",
+  "title": "OpenPanel 产品分析",
+  "url": "https://github.com/openpanel-dev/openpanel",
+  "repo": "openpanel-dev/openpanel",
+  "desc": "Mixpanel 的开源替代：事件、漏斗、分群、会话回放、A/B 测试，自托管数据自控。",
+  "run": "docker compose up -d",
+  "status": "需 Docker"
+ },
+ {
+  "cat": "Web 开发与运维",
+  "title": "code-server 云端 VS Code",
+  "url": "https://github.com/coder/code-server",
+  "repo": "coder/code-server",
+  "desc": "把完整 VS Code 跑在服务器上，浏览器访问，任何设备都能用统一开发环境。",
+  "run": "下载 Release 后运行 code-server",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "Web 开发与运维",
+  "title": "Open SaaS 模板",
+  "url": "https://github.com/wasp-lang/open-saas",
+  "repo": "wasp-lang/open-saas",
+  "desc": "基于 Wasp 的开源 SaaS 启动模板：认证、支付、邮件、后台、落地页全都有。",
+  "run": "npm i -g @wasp.sh/wasp；wasp new -t saas",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "Web 开发与运维",
+  "title": "Apache Cloudberry",
+  "url": "https://github.com/apache/cloudberry",
+  "repo": "apache/cloudberry",
+  "desc": "Apache 孵化中的 MPP 数据库，定位 Greenplum 的现代开源替代，面向数仓与 AI/ML 负载。",
+  "run": "按 README 编译或使用 Docker 沙箱",
+  "status": "需 GPU/Linux"
+ },
+ {
+  "cat": "Web 开发与运维",
+  "title": "gitignore 模板库",
+  "url": "https://github.com/github/gitignore",
+  "repo": "github/gitignore",
+  "desc": "GitHub 官方维护的 .gitignore 模板合集，覆盖几乎所有语言、框架和 IDE。",
+  "run": "复制对应模板为项目根目录 .gitignore",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "安全研究",
+  "title": "ESP32 无线干扰研究",
+  "url": "https://github.com/EmenstaNougat/ESP32-BlueJammer",
+  "repo": "EmenstaNougat/ESP32-BlueJammer",
+  "desc": "基于 ESP32 + nRF24 的 2.4GHz 干扰测试工具（蓝牙/BLE/WiFi/遥控），固件闭源但提供网页刷机。",
+  "run": "按 README 准备硬件并用网页刷机",
+  "status": "需硬件"
+ },
+ {
+  "cat": "安全研究",
+  "title": "Bumblebee 供应链扫描",
+  "url": "https://github.com/perplexityai/bumblebee",
+  "repo": "perplexityai/bumblebee",
+  "desc": "Perplexity 开源的只读扫描器，检查本机是否装了已知供应链风险的包、扩展或配置。",
+  "run": "按 README 下载二进制或源码构建",
+  "status": "源码就绪"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "Awesome 总索引",
+  "url": "https://github.com/sindresorhus/awesome",
+  "repo": "sindresorhus/awesome",
+  "desc": "开源世界最著名的清单合集，按主题索引各种 Awesome List。",
+  "run": "打开 README 检索主题",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "Public APIs 免费接口",
+  "url": "https://github.com/public-apis/public-apis",
+  "repo": "public-apis/public-apis",
+  "desc": "上千个公共免费 API 的索引，标注是否需要 Key、限流和文档链接。",
+  "run": "打开 README 按分类筛选",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "Free for Dev 免费额度",
+  "url": "https://github.com/ripienaar/free-for-dev",
+  "repo": "ripienaar/free-for-dev",
+  "desc": "开发者可用的免费套餐、免费层服务大全（云、CI、数据库、监控等）。",
+  "run": "打开 README 检索服务",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "自托管应用大全",
+  "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+  "repo": "awesome-selfhosted/awesome-selfhosted",
+  "desc": "可自托管软件清单：笔记、网盘、监控、邮件、IM、媒体、自动化，标注技术栈与部署难度。",
+  "run": "打开 README 按需求筛选",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "量化金融清单",
+  "url": "https://github.com/wilsonfreitas/awesome-quant",
+  "repo": "wilsonfreitas/awesome-quant",
+  "desc": "量化领域最全的资源索引：库、数据源、回测、因子、风险、另类数据、书籍。",
+  "run": "打开 README 按分类取用",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "Build Your Own X",
+  "url": "https://github.com/codecrafters-io/build-your-own-x",
+  "repo": "codecrafters-io/build-your-own-x",
+  "desc": "按主题整理的“从零实现”教程：Redis、Git、Docker、数据库、OS、编译器、搜索引擎。",
+  "run": "打开 README 挑一个主题动手",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "开发者路线图",
+  "url": "https://github.com/kamranahmedse/developer-roadmap",
+  "repo": "kamranahmedse/developer-roadmap",
+  "desc": "roadmap.sh 的源码仓库，前端、后端、DevOps、AI、数据工程等交互式学习路径。",
+  "run": "直接访问 roadmap.sh 体验",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "免费编程书单",
+  "url": "https://github.com/EbookFoundation/free-programming-books",
+  "repo": "EbookFoundation/free-programming-books",
+  "desc": "按语言和主题分类的免费电子书、教程、课程索引，含中文版。",
+  "run": "打开 README 按语言查找",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "系统设计入门",
+  "url": "https://github.com/donnemartin/system-design-primer",
+  "repo": "donnemartin/system-design-primer",
+  "desc": "系统设计面试经典资料：可扩展性、负载均衡、缓存、队列、微服务，附常见题解与权衡。",
+  "run": "打开 README 按章节学习",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "编程面试大学",
+  "url": "https://github.com/jwasham/coding-interview-university",
+  "repo": "jwasham/coding-interview-university",
+  "desc": "完整的计算机基础与面试学习计划，从数据结构算法到 OS、网络、系统设计，带时间规划。",
+  "run": "打开 README 按计划推进",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "技术面试手册",
+  "url": "https://github.com/yangshun/tech-interview-handbook",
+  "repo": "yangshun/tech-interview-handbook",
+  "desc": "结构化面试准备手册：算法、系统设计、行为面试，讲“怎么准备、怎么表达”。",
+  "run": "打开 README 按模块复习",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "运维安全秘密知识",
+  "url": "https://github.com/trimstray/the-book-of-secret-knowledge",
+  "repo": "trimstray/the-book-of-secret-knowledge",
+  "desc": "面向运维、安全、网络的实战知识合集：命令行工具、排障技巧、常用配置。",
+  "run": "打开 README 当速查手册",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "JS 算法与数据结构",
+  "url": "https://github.com/trekhleb/javascript-algorithms",
+  "repo": "trekhleb/javascript-algorithms",
+  "desc": "用 JavaScript 实现的常见算法与数据结构，配解释、示例和可视化。",
+  "run": "打开 README 或直接跑测试",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "30 秒代码片段",
+  "url": "https://github.com/30-seconds/30-seconds-of-code",
+  "repo": "30-seconds/30-seconds-of-code",
+  "desc": "精选短小 JavaScript 片段，几行解决数组、字符串、日期等日常问题。",
+  "run": "打开 README 搜索片段",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "命令行艺术",
+  "url": "https://github.com/jlevy/the-art-of-command-line",
+  "repo": "jlevy/the-art-of-command-line",
+  "desc": "资深开发者总结的命令行技巧与最佳实践，精炼实用，含避坑与安全注意事项。",
+  "run": "打开 README 边看边试",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "项目式学习清单",
+  "url": "https://github.com/practical-tutorials/project-based-learning",
+  "repo": "practical-tutorials/project-based-learning",
+  "desc": "按语言和难度整理的实战项目教程：做简易 Twitter、编译器、游戏等。",
+  "run": "打开 README 按兴趣选项目",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "你不知道的 JavaScript",
+  "url": "https://github.com/getify/You-Dont-Know-JS",
+  "repo": "getify/You-Dont-Know-JS",
+  "desc": "深入讲解 JS 核心机制：作用域、闭包、this、原型、类型、异步与性能。",
+  "run": "打开 README 按书阅读",
+  "status": "文档类"
+ },
+ {
+  "cat": "资源清单与学习路线",
+  "title": "freeCodeCamp 学习平台",
+  "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+  "repo": "freeCodeCamp/freeCodeCamp",
+  "desc": "完全开源的免费编程学习平台源码，含课程、实战项目与认证体系。",
+  "run": "日常直接上官网学；二次开发见 README",
+  "status": "文档类"
+ }
+]
