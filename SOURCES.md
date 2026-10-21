@@ -74,3 +74,4 @@
 | 70 | freeCodeCamp 学习平台 | freeCodeCamp | https://github.com/freeCodeCamp/freeCodeCamp | 文档类 |
 
 > 所有项目版权归原作者，本项目仅提供索引与 Fork 汇总。
+> Fork 进度：10 / 70（GitHub 二级限流暂停中），补齐脚本见 `tools/fork-remaining.ps1`，已完成的 Fork 会显示 `forked from` 来源。

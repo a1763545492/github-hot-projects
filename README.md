@@ -6,18 +6,43 @@
 
 - **本仓库不是这些项目的作者**，仅做索引、分类和安装记录；所有代码与文档版权归原作者所有。
 - 每个项目的原始仓库、作者与许可证，以 [SOURCES.md](SOURCES.md) 中列出的官方地址为准。
-- 70 个项目均已在 GitHub 上 **Fork** 到本账号，Fork 页面会自动标注 `forked from 原作者/仓库`，保留原始提交历史与许可证。
+- 70 个项目以 **Fork** 形式同步到本账号，Fork 页面会自动标注 `forked from 原作者/仓库`，保留原始提交历史与许可证；进度见下方「Fork 进度」。
 - 分类与介绍整理自微信文章截图；如原作者认为索引方式不妥，可联系删除对应条目。
+
+## Fork 进度
+
+- 已完成 **10 / 70**（2026-10-21）。GitHub 对 Fork 有账号级二级限流（403 `was submitted too quickly`），剩余 60 个已暂停，避免加剧限流。
+- 补齐方式：
+
+```powershell
+gh auth login
+powershell -ExecutionPolicy Bypass -File tools/fork-remaining.ps1
+```
+
+脚本会先检查已有 Fork 并跳过，每 100 秒创建一个；遇到 403 自动等待 5 分钟后重试，可反复运行直到全部补齐。
+
+| 已 Fork 项目 | 你的 Fork | 原始仓库 |
+| --- | --- | --- |
+| REA | [rea](https://github.com/a1763545492/rea) | morluto/rea |
+| OpenSRE | [opensre](https://github.com/a1763545492/opensre) | Tracer-Cloud/opensre |
+| claude-mem | [claude-mem](https://github.com/a1763545492/claude-mem) | thedotmack/claude-mem |
+| Anthropic 岗位插件包 | [knowledge-work-plugins](https://github.com/a1763545492/knowledge-work-plugins) | anthropics/knowledge-work-plugins |
+| text-to-cad | [text-to-cad](https://github.com/a1763545492/text-to-cad) | earthtojake/text-to-cad |
+| diagram-design | [diagram-design](https://github.com/a1763545492/diagram-design) | cathrynlavery/diagram-design |
+| skills | [skills](https://github.com/a1763545492/skills) | mattpocock/skills |
+| free-claude-code | [free-claude-code](https://github.com/a1763545492/free-claude-code) | Alishahryar1/free-claude-code |
+| OpenMontage | [OpenMontage](https://github.com/a1763545492/OpenMontage) | calesthio/OpenMontage |
+| OpenClaw | [openclaw](https://github.com/a1763545492/openclaw) | openclaw/openclaw |
 
 ## 分类目录
 
-- [AI 编程助手与技能](#1) · 11 个
-- [AI 应用与 Agent 框架](#2) · 12 个
-- [本地大模型与推理](#3) · 12 个
-- [自动化与数据采集](#4) · 9 个
-- [Web 开发与运维](#5) · 6 个
-- [安全研究](#6) · 2 个
-- [资源清单与学习路线](#7) · 18 个
+- AI 编程助手与技能 · 11 个
+- AI 应用与 Agent 框架 · 12 个
+- 本地大模型与推理 · 12 个
+- 自动化与数据采集 · 9 个
+- Web 开发与运维 · 6 个
+- 安全研究 · 2 个
+- 资源清单与学习路线 · 18 个
 
 ## 使用方式
 
