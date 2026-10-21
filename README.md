@@ -11,28 +11,81 @@
 
 ## Fork 进度
 
-- 已完成 **10 / 70**（2026-10-21）。GitHub 对 Fork 有账号级二级限流（403 `was submitted too quickly`），剩余 60 个已暂停，避免加剧限流。
-- 补齐方式：
+- 已完成 **70 / 70**（2026-10-21）。全部为本账号下的 Fork，Fork 页面会自动显示 `forked from 原作者/仓库`，保留原始提交历史与许可证。
+- 全部 Fork 列表：<https://github.com/a1763545492?tab=repositories&type=fork>
 
-```powershell
-gh auth login
-powershell -ExecutionPolicy Bypass -File tools/fork-remaining.ps1
-```
-
-脚本会先检查已有 Fork 并跳过，每 100 秒创建一个；遇到 403 自动等待 5 分钟后重试，可反复运行直到全部补齐。
-
-| 已 Fork 项目 | 你的 Fork | 原始仓库 |
+| 项目 | 你的 Fork | 原始仓库 |
 | --- | --- | --- |
-| REA | [rea](https://github.com/a1763545492/rea) | morluto/rea |
-| OpenSRE | [opensre](https://github.com/a1763545492/opensre) | Tracer-Cloud/opensre |
-| claude-mem | [claude-mem](https://github.com/a1763545492/claude-mem) | thedotmack/claude-mem |
+| REA 逆向工程 Agent | [rea](https://github.com/a1763545492/rea) | morluto/rea |
+| Matt Pocock 的 AI 编码技能集 | [skills](https://github.com/a1763545492/skills) | mattpocock/skills |
+| diagram-design 画图技能 | [diagram-design](https://github.com/a1763545492/diagram-design) | cathrynlavery/diagram-design |
+| OpenMontage 视频工作室 | [OpenMontage](https://github.com/a1763545492/OpenMontage) | calesthio/OpenMontage |
+| claude-mem 长期记忆 | [claude-mem](https://github.com/a1763545492/claude-mem) | thedotmack/claude-mem |
+| free-claude-code 请求代理 | [free-claude-code](https://github.com/a1763545492/free-claude-code) | Alishahryar1/free-claude-code |
 | Anthropic 岗位插件包 | [knowledge-work-plugins](https://github.com/a1763545492/knowledge-work-plugins) | anthropics/knowledge-work-plugins |
-| text-to-cad | [text-to-cad](https://github.com/a1763545492/text-to-cad) | earthtojake/text-to-cad |
-| diagram-design | [diagram-design](https://github.com/a1763545492/diagram-design) | cathrynlavery/diagram-design |
-| skills | [skills](https://github.com/a1763545492/skills) | mattpocock/skills |
-| free-claude-code | [free-claude-code](https://github.com/a1763545492/free-claude-code) | Alishahryar1/free-claude-code |
-| OpenMontage | [OpenMontage](https://github.com/a1763545492/OpenMontage) | calesthio/OpenMontage |
-| OpenClaw | [openclaw](https://github.com/a1763545492/openclaw) | openclaw/openclaw |
+| text-to-cad 文生 3D 模型 | [text-to-cad](https://github.com/a1763545492/text-to-cad) | earthtojake/text-to-cad |
+| OpenSRE AI 值班 | [opensre](https://github.com/a1763545492/opensre) | Tracer-Cloud/opensre |
+| Aider 终端结对编程 | [aider](https://github.com/a1763545492/aider) | paul-gauthier/aider |
+| Claude Skills 精选合集 | [awesome-claude-skills](https://github.com/a1763545492/awesome-claude-skills) | travisvn/awesome-claude-skills |
+| LangChain | [langchain](https://github.com/a1763545492/langchain) | langchain-ai/langchain |
+| Langflow 可视化工作流 | [langflow](https://github.com/a1763545492/langflow) | langflow-ai/langflow |
+| Dify AI 应用平台 | [dify](https://github.com/a1763545492/dify) | langgenius/dify |
+| OpenClaw 自托管 AI 助手 | [openclaw](https://github.com/a1763545492/openclaw) | openclaw/openclaw |
+| Mem0 记忆层 | [mem0](https://github.com/a1763545492/mem0) | mem0ai/mem0 |
+| CrewAI 多 Agent 协作 | [crewAI](https://github.com/a1763545492/crewAI) | crewAIInc/crewAI |
+| MetaGPT AI 软件公司 | [MetaGPT](https://github.com/a1763545492/MetaGPT) | geekan/MetaGPT |
+| 微软 AutoGen | [autogen](https://github.com/a1763545492/autogen) | microsoft/autogen |
+| Supermemory 记忆引擎 | [supermemory](https://github.com/a1763545492/supermemory) | supermemoryai/supermemory |
+| iFixAI Agent 审计 | [iFixAI](https://github.com/a1763545492/iFixAI) | ifixai-ai/iFixAI |
+| TradingAgents 交易研究 | [TradingAgents](https://github.com/a1763545492/TradingAgents) | TauricResearch/TradingAgents |
+| DSPy 编程式 LLM | [dspy](https://github.com/a1763545492/dspy) | stanfordnlp/dspy |
+| Hugging Face Transformers | [transformers](https://github.com/a1763545492/transformers) | huggingface/transformers |
+| vLLM 推理加速 | [vllm](https://github.com/a1763545492/vllm) | vllm-project/vllm |
+| llama.cpp C++ 推理 | [llama.cpp](https://github.com/a1763545492/llama.cpp) | ggml-org/llama.cpp |
+| LlamaIndex RAG 框架 | [llama_index](https://github.com/a1763545492/llama_index) | run-llama/llama_index |
+| nanoGPT 教学实现 | [nanoGPT](https://github.com/a1763545492/nanoGPT) | karpathy/nanoGPT |
+| RAGFlow 端到端 RAG | [ragflow](https://github.com/a1763545492/ragflow) | infiniflow/ragflow |
+| DeepSeek-V3 官方仓库 | [DeepSeek-V3](https://github.com/a1763545492/DeepSeek-V3) | deepseek-ai/DeepSeek-V3 |
+| AirLLM 小显存跑大模型 | [airllm](https://github.com/a1763545492/airllm) | lyogavin/airllm |
+| Ollama 本地模型运行时 | [ollama](https://github.com/a1763545492/ollama) | ollama/ollama |
+| Open WebUI 聊天前端 | [open-webui](https://github.com/a1763545492/open-webui) | open-webui/open-webui |
+| LobeChat 聊天应用 | [lobe-chat](https://github.com/a1763545492/lobe-chat) | lobehub/lobe-chat |
+| ComfyUI 节点绘画 | [ComfyUI](https://github.com/a1763545492/ComfyUI) | comfyanonymous/ComfyUI |
+| n8n 工作流自动化 | [n8n](https://github.com/a1763545492/n8n) | n8n-io/n8n |
+| browser-use 浏览器 Agent | [browser-use](https://github.com/a1763545492/browser-use) | browser-use/browser-use |
+| Stagehand 网页自动化 | [stagehand](https://github.com/a1763545492/stagehand) | browserbase/stagehand |
+| Firecrawl 网页转 Markdown | [firecrawl](https://github.com/a1763545492/firecrawl) | mendableai/firecrawl |
+| 微软 MarkItDown | [markitdown](https://github.com/a1763545492/markitdown) | microsoft/markitdown |
+| Auto-Editor 自动剪辑 | [auto-editor](https://github.com/a1763545492/auto-editor) | WyattBlue/auto-editor |
+| Pic Smaller 图片压缩 | [pic-smaller](https://github.com/a1763545492/pic-smaller) | joye61/pic-smaller |
+| Scrapling 自适应爬虫 | [Scrapling](https://github.com/a1763545492/Scrapling) | D4Vinci/Scrapling |
+| Maigret OSINT | [maigret](https://github.com/a1763545492/maigret) | soxoj/maigret |
+| Markdoc 文档框架 | [markdoc](https://github.com/a1763545492/markdoc) | markdoc/markdoc |
+| OpenPanel 产品分析 | [openpanel](https://github.com/a1763545492/openpanel) | openpanel-dev/openpanel |
+| code-server 云端 VS Code | [code-server](https://github.com/a1763545492/code-server) | coder/code-server |
+| Open SaaS 模板 | [open-saas](https://github.com/a1763545492/open-saas) | wasp-lang/open-saas |
+| Apache Cloudberry | [cloudberry](https://github.com/a1763545492/cloudberry) | apache/cloudberry |
+| gitignore 模板库 | [gitignore](https://github.com/a1763545492/gitignore) | github/gitignore |
+| ESP32 无线干扰研究 | [ESP32-BlueJammer](https://github.com/a1763545492/ESP32-BlueJammer) | EmenstaNougat/ESP32-BlueJammer |
+| Bumblebee 供应链扫描 | [bumblebee](https://github.com/a1763545492/bumblebee) | perplexityai/bumblebee |
+| Awesome 总索引 | [awesome](https://github.com/a1763545492/awesome) | sindresorhus/awesome |
+| Public APIs 免费接口 | [public-apis](https://github.com/a1763545492/public-apis) | public-apis/public-apis |
+| Free for Dev 免费额度 | [free-for-dev](https://github.com/a1763545492/free-for-dev) | ripienaar/free-for-dev |
+| 自托管应用大全 | [awesome-selfhosted](https://github.com/a1763545492/awesome-selfhosted) | awesome-selfhosted/awesome-selfhosted |
+| 量化金融清单 | [awesome-quant](https://github.com/a1763545492/awesome-quant) | wilsonfreitas/awesome-quant |
+| Build Your Own X | [build-your-own-x](https://github.com/a1763545492/build-your-own-x) | codecrafters-io/build-your-own-x |
+| 开发者路线图 | [developer-roadmap](https://github.com/a1763545492/developer-roadmap) | kamranahmedse/developer-roadmap |
+| 免费编程书单 | [free-programming-books](https://github.com/a1763545492/free-programming-books) | EbookFoundation/free-programming-books |
+| 系统设计入门 | [system-design-primer](https://github.com/a1763545492/system-design-primer) | donnemartin/system-design-primer |
+| 编程面试大学 | [coding-interview-university](https://github.com/a1763545492/coding-interview-university) | jwasham/coding-interview-university |
+| 技术面试手册 | [tech-interview-handbook](https://github.com/a1763545492/tech-interview-handbook) | yangshun/tech-interview-handbook |
+| 运维安全秘密知识 | [the-book-of-secret-knowledge](https://github.com/a1763545492/the-book-of-secret-knowledge) | trimstray/the-book-of-secret-knowledge |
+| JS 算法与数据结构 | [javascript-algorithms](https://github.com/a1763545492/javascript-algorithms) | trekhleb/javascript-algorithms |
+| 30 秒代码片段 | [30-seconds-of-code](https://github.com/a1763545492/30-seconds-of-code) | 30-seconds/30-seconds-of-code |
+| 命令行艺术 | [the-art-of-command-line](https://github.com/a1763545492/the-art-of-command-line) | jlevy/the-art-of-command-line |
+| 项目式学习清单 | [project-based-learning](https://github.com/a1763545492/project-based-learning) | practical-tutorials/project-based-learning |
+| 你不知道的 JavaScript | [You-Dont-Know-JS](https://github.com/a1763545492/You-Dont-Know-JS) | getify/You-Dont-Know-JS |
+| freeCodeCamp 学习平台 | [freeCodeCamp](https://github.com/a1763545492/freeCodeCamp) | freeCodeCamp/freeCodeCamp |
 
 ## 分类目录
 

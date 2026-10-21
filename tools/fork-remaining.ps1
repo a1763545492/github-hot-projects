@@ -34,7 +34,7 @@ foreach ($p in $projects) {
   }
 
   $done = $false
-  for ($a = 1; $a -le 6; $a++) {
+  for ($a = 1; $a -le 12; $a++) {
     $out = & $gh api --method POST "repos/$repo/forks" 2>&1
     if ($LASTEXITCODE -eq 0) { Write-Host "OK   $repo"; $ok++; $done = $true; break }
     if (($out -join ' ') -match 'already exists') { Write-Host "DUP  $repo"; $skip++; $done = $true; break }
